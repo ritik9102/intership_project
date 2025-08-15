@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,15 +53,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// AI Chatbot specific colors
-				chat: {
-					bg: 'hsl(var(--chat-bg))',
-					surface: 'hsl(var(--chat-surface))',
-					'user-message': 'hsl(var(--user-message))',
-					'bot-message': 'hsl(var(--bot-message))',
-					'message-text': 'hsl(var(--message-text))',
-					'message-muted': 'hsl(var(--message-muted))'
+				ml: {
+					gradient: 'var(--ml-gradient)',
+					code: 'hsl(var(--code-bg))'
 				},
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -93,32 +91,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				},
-				'typing': {
-					'0%': { opacity: '0.4' },
-					'50%': { opacity: '1' },
-					'100%': { opacity: '0.4' }
-				},
-				'slide-up': {
-					'0%': { transform: 'translateY(20px)', opacity: '0' },
-					'100%': { transform: 'translateY(0)', opacity: '1' }
-				},
-				'glow': {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(263 70% 50% / 0.3)' },
-					'50%': { boxShadow: '0 0 30px hsl(263 70% 50% / 0.5)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'typing': 'typing 1.5s ease-in-out infinite',
-				'slide-up': 'slide-up 0.3s ease-out',
-				'glow': 'glow 2s ease-in-out infinite'
-			},
-			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-surface': 'var(--gradient-surface)',
-				'gradient-glow': 'var(--gradient-glow)'
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
